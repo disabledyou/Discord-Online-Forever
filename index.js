@@ -12,7 +12,7 @@ bot.on("ready", () => {
   console.log(`${bot.user.username} is connected and ready!`);
 
   // Set streaming status
-  bot.editStatus("streaming", {
+  bot.editStatus("idle", {
     name: "Streaming Game",
     type: 1, // 1 indicates streaming
     url: "www.youtube.com"
