@@ -11,12 +11,8 @@ bot.on("error", (err) => {
 bot.on("ready", () => {
   console.log(`${bot.user.username} is connected and ready!`);
 
-  // Set streaming status
-  bot.editStatus("idle", {
-    name: "Streaming Game",
-    type: 1, // 1 indicates streaming
-    url: "www.youtube.com"
-  });
+client.user.setActivity("stripped", {
+  type: "STREAMING",
+  url: "https://www.twitch.tv/air"
 });
-
 bot.connect(); // Get the bot to connect to Discord
