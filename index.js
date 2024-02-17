@@ -9,3 +9,8 @@ bot.on("error", (err) => {
 });
 
 bot.connect(); // Get the bot to connect to Discord
+
+client.user.setActivity({
+    name: '/stripped',
+    type: ActivityType.Watching,
+});
