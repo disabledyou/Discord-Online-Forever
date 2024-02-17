@@ -9,11 +9,3 @@ bot.on("error", (err) => {
 });
 
 bot.connect(); // Get the bot to connect to Discord
-
-client.user.setPresence({
-    status: 'dnd',
-    activity: {
-        name: '/stripped',
-        type: 'PLAYING
-    }
-});
