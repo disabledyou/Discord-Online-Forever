@@ -10,4 +10,20 @@ bot.on("error", (err) => {
 
 bot.connect(); // Get the bot to connect to Discord
 
+const status = await client.user.setPresence({ 
+    status: 'idle', 
+    activities: [{
+        type: ActivityType.Custom,
+        name: 'customname',
+        status: '/stripped'
+    }]
+))
 
+
+/*const status = await client.user.setActivity
+    type: ActivityType.Custom,
+    name: '/stripped',
+    state: '/stripped'
+}); 
+
+console.log(JSON.stringify(status)): 
